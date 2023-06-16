@@ -1,0 +1,27 @@
+# qa master deployment test
+name: QA Upload Zome Backend App
+
+I#on:
+ # pull_request:
+ #   branches:
+ #     - dev_master
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+         SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+      - name: executing remote ssh command using ssh key
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: ${{ secrets.AWS_QA_HOST }}
+          username: ${{ secrets.QA_USER }}
+          password: ${{ secrets.QA_PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: sh deploy.sh

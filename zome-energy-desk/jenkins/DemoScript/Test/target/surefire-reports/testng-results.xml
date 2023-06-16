@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-04T11:57:53 PDT" name="test.java.demoScriptTest" finished-at="2023-04-04T11:59:19 PDT" duration-ms="86393">
+    <groups>
+    </groups>
+    <test started-at="2023-04-04T11:57:53 PDT" name="Command line test" finished-at="2023-04-04T11:59:19 PDT" duration-ms="86393">
+      <class name="test.java.demoScriptTest">
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:test.java.demoScriptTest@5db45159]" started-at="2023-04-04T11:57:52 PDT" name="beforeEachTest" finished-at="2023-04-04T11:57:53 PDT" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:test.java.demoScriptTest@5db45159]" started-at="2023-04-04T11:57:53 PDT" name="setUp" finished-at="2023-04-04T11:58:09 PDT" duration-ms="16467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.java.demoScriptTest.dispatch() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dispatch()[pri:0, instance:test.java.demoScriptTest@5db45159]" started-at="2023-04-04T11:58:09 PDT" name="dispatch" finished-at="2023-04-04T11:59:18 PDT" duration-ms="68420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dispatch -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.java.demoScriptTest@5db45159]" started-at="2023-04-04T11:59:18 PDT" name="getResult" finished-at="2023-04-04T11:59:19 PDT" duration-ms="880" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dispatch status=SUCCESS method=demoScriptTest.dispatch()[pri:0, instance:test.java.demoScriptTest@5db45159] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:test.java.demoScriptTest@5db45159]" started-at="2023-04-04T11:59:19 PDT" name="afterEachTest" finished-at="2023-04-04T11:59:19 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.java.demoScriptTest@5db45159]" started-at="2023-04-04T11:59:19 PDT" name="afterSuite" finished-at="2023-04-04T11:59:19 PDT" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test.java.demoScriptTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- test.java.demoScriptTest -->
+</testng-results>

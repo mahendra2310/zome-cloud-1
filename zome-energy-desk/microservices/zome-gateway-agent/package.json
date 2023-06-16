@@ -1,0 +1,22 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "zome-gateway-agent",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "zome-server": "file:../core/server",
+    "zome-config": "file:../core/config",
+    "zome-schemas": "file:../core/schemas",
+    "zome-client": "file:../core/client",
+    "zome-utils": "file:../core/utils",
+    "irc-framework": "4.9.0",
+    "systeminformation": "5.3.3",
+    "newrelic": "^8.14.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node start.server.js"
+  }
+}

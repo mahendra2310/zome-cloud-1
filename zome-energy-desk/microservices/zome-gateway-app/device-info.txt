@@ -1,0 +1,27 @@
+DeviceName : Bulb device
+*******************************
+DeviceID    : 6ec32d0e2afb955d073dc340ce5d2457
+DeviceUUID  : 10000000000000000000198
+DeviceNodeID: 98
+DeviceType  : 257
+DeviceAction: 0
+DeviceBrightness: 99
+
+DeviceName : Fan device
+*******************************
+DeviceID    : 6ec32d0e2afb955d073dc340ce5d2467
+DeviceUUID  : 10000000000000000000199
+DeviceNodeID: 99
+DeviceType  : 255
+DeviceAction: 0
+DeviceBrightness: 2
+
+DeviceName : Air Cooling device
+*******************************
+DeviceID    : 6ec32d0e2afb955d073dc340ce5d2477
+DeviceUUID  : 10000000000000000000200
+DeviceNodeID: 100
+DeviceType  : 254
+DeviceAction: 0
+DeviceBrightness: 1
+

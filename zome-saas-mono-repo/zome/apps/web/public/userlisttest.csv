@@ -1,0 +1,4 @@
+full_name,role,email,username,password,property_id,building_id,device_id,phone
+odin,site-owner,odin@gmail.com,odin01,123,12345,,1234567890,8987897885
+ragnar,building-owner,ragnar@gmail.com,ragnar01,123,,,1234567890,8987897885
+,sfu,floki@gmail.com,floki01,123,,,1234567890,8987897885

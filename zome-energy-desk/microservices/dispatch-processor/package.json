@@ -1,0 +1,31 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "zome-connector",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "aws-lambda-create-request-response": "^0.2.7",
+    "bunyan-cloudwatch": "^2.2.0",
+    "bunyan-rotating-file-stream": "^2.0.3",
+    "dotenv": "^10.0.0",
+    "in-memory-http-listener": "^0.2.7",
+    "irc-framework": "^4.11.0",
+    "mongo-dbmanager": "file:../mongo-dbmanager",
+    "newrelic": "^8.17.1",
+    "node-schedule": "^2.1.1",
+    "path": "^0.12.7",
+    "systeminformation": "^5.7.7",
+    "uuid": "^8.3.2",
+    "zome-client": "file:../core/client",
+    "zome-config": "file:../core/config",
+    "zome-schemas": "file:../core/schemas",
+    "zome-server": "file:../core/server",
+    "zome-utils": "file:../core/utils"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node start.server.js"
+  }
+}

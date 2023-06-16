@@ -1,0 +1,57 @@
+# Serverless Config
+service: zome-energy-desk
+
+# Provider
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: ${opt:stage, 'dev'}
+  timeout: 300
+
+  # Enviroment Varibles
+  environment:
+    STAGE: ${self:custom.myStage}
+    # MODULE_PREFIX: 'microservices/'
+    MONGO_URL: 'mongodb://dipak:dipak123@3.88.179.144:27017/develop_zome_power?retryWrites=true&w=majority'
+
+# Constants Varibles
+custom:
+    # environments Variables used for convert string in upper case format
+    environments:
+    myStage: ${opt:stage, self:provider.stage}
+    stages:
+      - dev
+      - prod 
+    region:
+      prod: 'us-east-1'
+
+# Function
+functions:
+  apigateway-api:
+    handler: microservices/api-gateway/apiserver.proxy
+    description: apigateway ${opt:stage} API's
+    events:
+      - http:
+          method: any
+          path: /apigateway/{proxy+}
+          cors:
+            origin: '*'
+  zomekit-connector-api:
+    handler: microservices/zomekit-connector/zomeserver.start
+    description: zomekit connector ${opt:stage} API's
+    events:
+      - http:
+          method: any
+          path: /zomekitconnector/{proxy+}
+          cors:
+            origin: '*'
+
+# Plugins
+plugins:
+  - serverless-offline
+
+#package
+package:
+  exclude:
+    - .env
+   

@@ -1,0 +1,37 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ "ui-automation" , "dev_master"]
+  
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: Zome-Energy-Networks
+          repo: zome-energy-desk
+          github_token: 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
+          workflow_file_name: maven-manual.yml
+          ref: ui-automation
+          
+          
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: Zome-Energy-Networks
+          repo: zome-energy-desk
+          github_token: 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
+          workflow_file_name: tenant-app-manual.yml
+          ref: ui-automation

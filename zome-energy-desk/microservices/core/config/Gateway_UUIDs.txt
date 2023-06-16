@@ -1,0 +1,33 @@
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+//////// PRE-ASSIGNED GATEWAY UUIDs FOR SITES AND DEVELOPERS ////////////////
+////////                                                     ////////////////
+/////////////////////////////////////////////////////////////////////////////
+//////// PLEASE STRICTLY FOLLOW THE ASSIGNED UUIDs ONLY      ////////////////
+/////////////////////////////////////////////////////////////////////////////
+//////// IF A NEW UUID IS REQUIRED OR NEEDS ASSIGNING        ////////////////
+//////// PLEASE CONTACT abir.roy@zomepower                   ////////////////
+////////                                                     ////////////////
+////////      DO NOT UPDATE THE ENTRIES!!                    ////////////////
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+--------------------------------------------------------------------------------------------------
+Assigned site  			|   Gateway agent              		|    Assigned UUID            		 |
+ or developer  			|   assigned nick              		|                               	 |
+--------------------------------------------------------------------------------------------------
+Abir	       			|    gateway-agent-abir         	| 	c83e36-41ab5a-a8d6-4f04NaN2a243b30
+Swaroop	      			|    gateway-agent-swaroop	      	|   9f8e3c-b6a2eb-29f5-bdf0NaN752d73f2
+Mayank	       			|    gateway-agent-mayank	      	|   5abb8f-90a3d4-dcdc-3c6fNaN98ed1e60
+Sam     	   			|    gateway-agent-sam				|   b558e0-15639f-8ed3-6eb0NaN6adb534e
+Abir-Demo	   			|	 gateway-agent-abirdemo			| 	79e790-a56e16-291c-d039NaN1eefebff
+Virginia Oaks Apt	   	|    gateway-agent-VO1				| 	73476c-537bed-32a1-8aefNaN717fe6c4 
+Virginia Oaks Apt	   	|    gateway-agent-VO2				| 	19a676-9db32d-a246-3fdeNaNd6e04d93
+Frances Place Apt		| 	 gateway-agent-G1				| 	8923e0-ec2d1c-2ba0-2726NaN8593d210 
+Frances Place Apt		|    gateway-agent-G2				| 	e9a86d-5d194d-a323-1914NaN12e521a2
+Virginia Oaks Apt		| 	 gateway-agent-VO3				| 	66fff3-1e5b71-809f-bbffNaNaddc5421
+Virginia Oaks Apt		| 	 gateway-agent-VO4  			| 	d3fdfa-05cfac-173f-2c26NaN06ab4af3
+Abir-Demo-3				|	 Gateway-Lab-A3-32GB			| 	2c04fb-3013d3-b458-40a1NaNa6b91f07
+Brad-Demo				|	 Gateway-Demo-Brad				| 	56776e-0c3944-7d7a-f0ddNaNeb297c4f
+Griffin Apt				|	 gateway-agent-FP1				| 	83b41a-36a26e-9c43-0e84NaNf15d6dec
+Griffin Apt				|	 gateway-agent-FP2				| 	aae1ca-f06b51-106c-d515NaN19ebb162 

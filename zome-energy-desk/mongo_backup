@@ -1,0 +1,27 @@
+mongo admin --eval "printjson(db.fsyncLock())"
+ 
+MONGODUMP_PATH="/usr/bin/mongodump"
+MONGO_HOST="18.215.151.227" 
+MONGO_PORT="27017"
+MONGO_DATABASE="dev_zome_power" 
+
+mongodump -d dev_zome_power -h localhost
+
+ 
+TIMESTAMP=`date +%F-%H%M`
+S3_BUCKET_NAME="dev-zome-power-mongo-backup"
+S3_BUCKET_PATH="mongodb-backups"
+ 
+# Create backup
+$MONGODUMP_PATH -h $MONGO_HOST:$MONGO_PORT -d $MONGO_DATABASE
+
+# Add timestamp to backup
+sudo mv dump mongodb-$HOSTNAME-$TIMESTAMP
+sudo tar cf mongodb-$HOSTNAME-$TIMESTAMP.tar mongodb-$HOSTNAME-$TIMESTAMP
+ 
+# Upload to S3
+sudo s3cmd put mongodb-$HOSTNAME-$TIMESTAMP.tar 
+   s3://$S3_BUCKET_NAME/$S3_BUCKET_PATH/mongodb-$HOSTNAME-$TIMESTAMP.tar
+ 
+#Unlock database writes
+mongo admin --eval "printjson(db.fsyncUnlock())"

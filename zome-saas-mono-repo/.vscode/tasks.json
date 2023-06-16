@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "zome",
+			"problemMatcher": [
+				"$gulp-tsc"
+			],
+			"label": "npm: start - zome",
+			"detail": "nx serve"
+		}
+	]
+}

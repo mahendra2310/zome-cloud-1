@@ -1,0 +1,22 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "zome-gateway-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "zome-client": "file:../core/client",
+    "zome-config": "file:../core/config",
+    "zome-schemas": "file:../core/schemas",
+    "zome-server": "file:../core/server",
+    "zome-utils": "file:../core/utils",
+    "newrelic": "^8.14.0",
+    "mongo-dbmanager": "file:../mongo-dbmanager"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node start.server.js"
+  }
+}

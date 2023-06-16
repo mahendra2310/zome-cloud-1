@@ -1,0 +1,29 @@
+#name: Upload Zome Saas Mono
+
+on:
+  push:
+    branches:
+    - pre-dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.DEV_ZOME_SAAS_MONO_AWS_KEY }}
+        aws-secret-access-key: ${{ secrets.DEV_ZOME_SAAS_MONO_AWS_SECRET }}
+        aws-region: us-east-2
+    - name: Build static site
+      run: sudo npm install -g nx
+    - name: installing node module and creating build
+      run: cd zome && yarn install && nx build web && nx export
+    - name: Deploy static site to S3 bucket
+      run: aws s3 sync ./zome/dist/apps/web/exported s3://develop-zome-saas-mono 

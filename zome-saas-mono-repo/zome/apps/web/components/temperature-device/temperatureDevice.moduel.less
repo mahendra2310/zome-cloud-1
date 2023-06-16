@@ -1,0 +1,542 @@
+.remove-btn-style {
+  padding: 5px 10px;
+  border: 0;
+  // min-height: 45px;
+  // min-width:140px;
+  background: var(--login-btn-background-color);
+  border-radius: var(--normal-radius);
+  font-size: 15px;
+}
+
+.delete-btn {
+  border: solid 1px red;
+  border-radius: 100%;
+  padding: 5px 1px;
+}
+.info-btn {
+  border: solid 1px rgb(62, 128, 228);
+  border-radius: 100%;
+  padding: 5px 1px;
+}
+.power-btn {
+  border: solid 1px rgb(240, 173, 50);
+  border-radius: 100%;
+  padding: 5px 1px;
+}
+.temp-set-btn {
+  padding: 5px 10px;
+  border: 0;
+  // min-height: 45px;
+  // min-width:140px;
+  background: var(--login-btn-background-color);
+  border-radius: var(--normal-radius);
+  font-size: 15px;
+}
+.temp-set-btn2 {
+  padding: 5px 10px;
+  border: 0;
+  // min-height: 45px;
+  // min-width:140px;
+  border: 1px solid var(--login-btn-background-color);
+  border-radius: var(--normal-radius);
+  font-size: 15px;
+  color: var(--login-btn-background-color);
+}
+
+.temp-btn {
+  border: solid 1px rgb(85, 201, 85);
+  border-radius: 100%;
+  padding: 5px 1px;
+}
+
+.app-container {
+  height: 400px;
+  width: 300px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  border: solid 1px #abce65;
+}
+
+.temperature-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   height: 70%;
+}
+
+.temperature-display {
+  display: flex;
+  border-radius: 50%;
+  color: #ffffff;
+  height: 220px;
+  width: 220px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  border: 3px #abce65 solid;
+  transition: background 0.5s;
+}
+
+.button {
+  border-radius: 100px;
+  height: 80px;
+  width: 80px;
+  font-size: 32px;
+  color: #ffffff;
+  background: #818887;
+  border: 2px #ffffff solid;
+}
+
+.button:hover {
+  background: rgb(184, 184, 184);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -31px;
+}
+
+.neutral {
+  background: rgb(184, 184, 184);
+}
+
+.cold {
+  background: #abce65;
+}
+
+.hot {
+  background: #ff5200;
+}
+
+.remove-d-btn-style {
+  padding: 5px 10px;
+  border: 0;
+  min-height: 45px;
+  min-width: 140px;
+  background: #616665;
+  border-radius: var(--normal-radius);
+}
+
+//power
+
+// #power-text{
+//   color: #2a2a2a;
+//   text-shadow: 0 1px 0 #ffba92;
+// }
+
+// #btn-bg{
+//   width: 82px;
+//   height: 82px;
+//   background: #cdd3c9;
+//   border-radius: 41px;
+//   margin: 0 auto 20px;
+//   border-bottom: 2px solid #2a2a2a;
+//   border-top: 2px solid #fff;
+//   overflow: hidden;
+//   position: relative;
+//   cursor: pointer;
+// }
+
+// #btn-bg.active{
+//   background: #2d3036;
+//   border-bottom: 2px solid #ffcab6;
+//   border-top: 2px solid #e66847;
+// }
+
+// #btn-highlight{
+//   width: 41px;
+//   height: 82px;
+//   background: #eee;
+//   margin-left: 41px;
+// }
+
+// .active #btn-highlight{
+//   background: #52555d;
+// }
+
+// #btn-ring{
+//   position: absolute;
+//   width: 42px;
+//   height: 42px;
+//   border: 10px solid #2a2a2a;
+//   top: 10px;
+//   left: 10px;
+//   border-radius: 31px;
+// }
+
+// .active #btn-ring{
+//   border-color: #61fc8c;
+// }
+
+// #ring-line{
+//   width: 10px;
+//   height: 41px;
+//   margin: -14px auto;
+//   background: #2a2a2a;
+//   border-radius: 7px;
+//   border-right: 3px solid #eee;
+//   border-left: 3px solid #cdd3c9;
+// }
+
+// .active #ring-line{
+//   background: #61fc8c;
+//   border-right: 3px solid #52555d;
+//   border-left: 3px solid #2d3036;
+// }
+
+body {
+  .input1 {
+    display: none;
+  }
+
+
+  .toggleWrapper1 {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fe4551;
+    box-shadow: 0 20px 20px 0 rgba(#fe4551, 0.3);
+
+    .toggle1 {
+      transition: all 0.2s ease-in-out;
+      height: 50px;
+      width: 500px;
+      background-color: transparent;
+      border: 10px solid #fff;
+      border-radius: 50%;
+      cursor: pointer;
+
+      animation: red 0.7s linear forwards !important;
+    }
+  }
+  .toggleWrapper2 {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #48e98a;
+    box-shadow: 0 20px 20px 0 rgba(#48e98a, 0.3);
+
+    .toggle2 {
+      transition: all 0.2s ease-in-out;
+      height: 20px;
+      width: 20px;
+      background-color: #48e98a;
+      border: 10px solid #fff;
+      border-radius: 30px;
+      cursor: pointer;
+      animation: green 0.7s linear forwards !important;
+    }
+  }
+  // input:checked {
+  //   & ~ .background {
+  //     background-color: #f9faf7;
+  //   }
+  //   & + .toggleWrapper2 {
+  //     background-color: #48e98a;
+  //     box-shadow: 0 20px 20px 0 rgba(#48e98a, 0.3);
+
+  //     &:active {
+  //       box-shadow: 0 15px 15px 0 rgba(#48e98a, 0.5);
+  //     }
+
+  //     .toggle2 {
+  //       width: 0;
+  //       background-color: #fff;
+  //       border-color: transparent;
+  //       border-radius: 30px;
+  //       animation: green 0.7s linear forwards !important;
+  //     }
+  // }
+  // }
+}
+
+@keyframes red {
+  0% {
+    height: 30px;
+    width: 0;
+    border-width: 5px;
+  }
+  55% {
+    height: 13px;
+    width: 27px;
+    border-width: 10px;
+  }
+
+  70% {
+    height: 20px;
+    width: 20px;
+    border-width: 10px;
+  }
+
+  85% {
+    height: 15px;
+    width: 25px;
+    border-width: 10px;
+  }
+
+  100% {
+    height: 20px;
+    width: 20px;
+    border-width: 10px;
+  }
+}
+
+@keyframes green {
+  0% {
+    height: 20px;
+    width: 20px;
+    border-width: 10px;
+  }
+  25%,
+  55%,
+  85% {
+    height: 30px;
+    width: 5px;
+    border-width: 5px;
+  }
+
+  40%,
+  70%,
+  100% {
+    height: 30px;
+    width: 0;
+    border-width: 5px;
+  }
+}
+
+//loader
+.loading {
+  height: 0;
+  width: 0;
+  padding: 15px;
+  border: 6px solid #ccc;
+  border-right-color: #888;
+  border-radius: 22px;
+  -webkit-animation: rotate 1s infinite linear !important;
+  /* left, top and position just for the demo! */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@-webkit-keyframes rotate {
+  /* 100% keyframe for  clockwise. 
+     use 0% instead for anticlockwise */
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.ant-modal {
+  top: 0px!important;
+}
+
+@media screen and (max-width: 720px) {
+  #app-container{
+    height: 349px;
+    width: 299px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+    border: solid 1px #abce65;
+    position: relative;
+    scroll-padding-top: 0;
+    
+  }
+  #Set-temperatureContainer{
+    margin-top: -3px;
+    margin-bottom: -38px;
+ }
+}
+
+
+@media screen and (max-width: 540px) {
+  #app-container{
+    height: 314px;
+    width: 299px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+    border: solid 1px #abce65;
+    position: relative;
+    scroll-padding-top: 0;
+
+  }
+//   #Set-temperatureContainer{
+//     margin-top: -3px;
+//     margin-bottom: -38px;
+    
+//  }
+
+//  #btn-plus-minus-container{
+//   margin-left: -30px;
+// }
+}
+
+
+@media screen and (max-width: 360px){
+#app-container{
+  height: 315px;
+  width: 299px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  border: solid 1px #abce65;
+  position: relative;
+  scroll-padding-top: 0;
+
+}
+#Set-temperatureContainer{
+   margin-top: -21px;
+  margin-bottom: -33px;
+}
+
+#btn-plus-minus-container{
+margin-left: -30px;
+}
+}
+
+
+
+@media screen and (max-width: 320px) {
+#app-container{
+  height: 268px;
+  width: 256px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 5px -4px 20px 0px rgba(0, 0, 0, 0.75);
+  border: solid 1px #abce65;
+  position: relative;
+  scroll-padding-top: 0;
+
+}
+#Set-temperatureContainer{
+  margin-top: -3px;
+  margin-bottom: -52px;
+  
+}
+
+#mode-checkbox{
+margin-bottom: -35px;
+margin-top: 15px;
+}
+
+#last-updatedAt{
+margin-top: 50px;
+}
+
+#pills-tab{
+margin-top: -5px;
+}
+
+#btn-plus-minus-container{
+margin-left: -14px;
+}
+#temperature-displaycold{
+margin-top: 10px;
+}
+
+#heating-text{
+margin-top: 25px;
+}
+}
+
+
+
+
+// @media screen and (max-width: 360px) and (max-height : 640px){
+//   #modal{
+//     height: fit-content;
+//     width: auto;
+//     position: relative;
+//     scroll-padding-top: 0;
+//   }
+// }
+
+// @media screen and (max-width: 360px) and (max-height : 640px){
+// #temperature-display-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//  // height: 70%;
+//   height: 32vh;
+//   width: 20rem;
+//   padding: 0rem;
+// }
+// }
+
+@media (max-width : 767px){
+
+// #temperature-displaycold {
+//   display: flex;
+//   border-radius: 20vh;
+//   color: #ffffff;
+//   height: 28vh;
+//   width: 28vh;
+//   text-align: center;
+//   align-items: center;
+//   font-size: 48px;
+//   border: 11vh #abce65 solid;
+//   transition: background 0.5s;
+//   /* border-radius: 8vh; */
+//   padding-left: -1vh;
+//   margin-left: 0vh;
+//   justify-content: center;
+//   align-content: center;
+//   flex-direction: column;
+//   margin-right: 0vh;
+// }
+
+.temperature-display{
+  width: 180px;
+  height: 180px;
+}
+
+  // #temperature-displaycold {
+  //   display: flex;
+  //   border-radius: 20vh;
+  //   color: #ffffff;
+  //   height: 28vh;
+  //   width: 28vh;
+  //   text-align: center;
+  //   align-items: center;
+  //   font-size: 48px;
+  //   border: 11vh #abce65 solid;
+  //   transition: background 0.5s;
+  //   /* border-radius: 8vh; */
+  //   padding-left: -1vh;
+  //   margin-left: 0vh;
+  //   justify-content: center;
+  //   align-content: center;
+  //   flex-direction: column;
+  //   margin-right: 0vh;
+  // }
+
+  .temperature-display{
+    width: 180px;
+    height: 180px;
+  }
+  
+}
+

@@ -1,0 +1,124 @@
+.left-right-space {
+  padding: 32px;
+}
+.s-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.s-layout__content {
+  flex: 1;
+}
+.dashboard-conent-align {
+  padding-top: 500px;
+}
+
+// table
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #abce65;
+  color: white;
+}
+
+.gateway-btn-style {
+  padding: 5px 10px;
+  border: 0;
+  min-height: 45px;
+  width: 100%;
+  background: var(--login-btn-background-color);
+  border-radius: var(--normal-radius);
+}
+
+.sidebar-alignment {
+  margin-left: 3rem;
+}
+
+//loader
+.loading {
+  height: 0;
+  width: 0;
+  padding: 15px;
+  border: 6px solid #ccc;
+  border-right-color: #888;
+  border-radius: 22px;
+  -webkit-animation: rotate 1s infinite linear !important;
+  /* left, top and position just for the demo! */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@-webkit-keyframes rotate {
+  /* 100% keyframe for  clockwise. 
+     use 0% instead for anticlockwise */
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.mobile-search {
+  display: none;
+}
+@media (min-width: 210px) and (max-width: 767px) {
+  .mobile-search {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .m-pl-0 {
+    padding-left: 0rem !important;
+  }
+  .m-pr-0 {
+    padding-right: 0rem !important;
+  }
+  .mobile-view-top-space {
+    padding-top: 6rem !important;
+  }
+}
+
+.anticon svg {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.online-ofline-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(210, 212, 69);
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+
+.login-btn-style-dashboard {
+  padding: 5px 10px;
+  border: 0;
+  min-height: 45px;
+  min-width:140px;
+  background-color: #CCC71c;
+  border-radius: var(--normal-radius);
+}

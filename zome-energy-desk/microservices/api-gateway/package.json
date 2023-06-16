@@ -1,0 +1,42 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "aws-lambda-http-server": "^0.2.7",
+    "aws-sdk": "^2.1116.0",
+    "bcryptjs": "2.4.3",
+    "bunyan-cloudwatch": "^2.2.0",
+    "bunyan-rotating-file-stream": "^2.0.3",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "irc-framework": "^4.11.0",
+    "jsonwebtoken": "8.5.1",
+    "moment-timezone": "^0.5.43",
+    "mongo-dbmanager": "file:../mongo-dbmanager",
+    "multer": "^1.4.3",
+    "multer-s3": "^2.10.0",
+    "newrelic": "^8.14.0",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.7.8",
+    "systeminformation": "^5.7.4",
+    "zome-client": "file:../core/client",
+    "zome-config": "file:../core/config",
+    "zome-schemas": "file:../core/schemas",
+    "zome-server": "file:../core/server",
+    "zome-utils": "file:../core/utils"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node start.server.js",
+    "start:dev": "nodemon start.server.js",
+    "lib-zip": "mkdir -p nodejs && cp -r node_modules nodejs/ && zip -r apigateway-layer.zip nodejs && rm -rf nodejs"
+  }
+}

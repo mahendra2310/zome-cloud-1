@@ -1,0 +1,14 @@
+<suite name="Suite ">
+    <test name="Suite">
+        <Classes>
+            <Class name="TestingCase.TestingCase1">
+            </Class>
+        </Classes>
+    </test>
+    <test name="Suite">
+        <Classes>
+            <Class name="TestingCase.TestingCase2">
+            </Class>
+        </Classes>
+    </test>
+</suite>

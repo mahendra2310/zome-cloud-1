@@ -1,0 +1,22 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "zome-server",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "aws-lambda-http-server": "^0.2.7",
+    "body-parser": "1.19.0",
+    "cookie-parser": "1.4.5",
+    "cors": "^2.8.5",
+    "express": "4.17.1",
+    "minimum-tls-version": "0.0.3",
+    "mongoose": "^5.12.7",
+    "zome-lib": "file:../lib"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node index.js"
+  }
+}

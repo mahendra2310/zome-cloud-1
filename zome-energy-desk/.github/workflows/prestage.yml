@@ -1,0 +1,30 @@
+# Pre Stage deployment test
+name: Stage - Upload Zome Backend Application
+#on:
+#  push:
+#    branches:
+#      - EDK-1287-Tenant-User-Enrollment
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+         SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+      - name: Store artifact for distribution
+        uses: actions/upload-artifact@v3
+        with:
+          name: Nodeapp-Build
+          path: /home/runner/work/zome-energy-desk/zome-energy-desk/*
+      - name: executing remote ssh command using ssh key
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: ${{ secrets.AWS_PRESTAGING_HOST }}
+          username: ${{ secrets.AWS_PRESTAGING_USER }}
+          password: ${{ secrets.AWS_PRESTAGING_PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: sh deploy.sh

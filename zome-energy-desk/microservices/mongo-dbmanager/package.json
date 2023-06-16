@@ -1,0 +1,16 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "mongo-dbmanager",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "mongoose": "^5.12.7",
+    "zome-server": "file:../core/server"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node index.js"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-offline": "^7.0.0",
+    "jest": "^29.4.1"
+  },
+  "scripts": {
+  "test": "jest",
+  "coverage": "jest --collect-coverage"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": ["*/**/*.{js,jsx}"]
+  }
+}

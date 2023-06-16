@@ -1,0 +1,13 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "zome-utils",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node index.js"
+  }
+}

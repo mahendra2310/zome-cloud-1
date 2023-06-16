@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>TenantAppTesting</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Archetype - TenantAppTesting</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  <build>
+    <directory>Dispatch-Trigger-Stage/target</directory>
+    <outputDirectory>Dispatch-Trigger-Stage/target/classes</outputDirectory>
+    <sourceDirectory>Dispatch-Trigger-Stage/src/main</sourceDirectory>
+    <testSourceDirectory>Dispatch-Trigger-Stage/src/main</testSourceDirectory>
+    </build>
+
+
+  <dependencies>
+
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.6.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.atmosphere.client/javascript -->
+
+
+
+
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.6.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.webdriver/webdriver-chrome -->
+    <dependency>
+      <groupId>org.seleniumhq.webdriver</groupId>
+      <artifactId>webdriver-chrome</artifactId>
+      <version>0.9.7376</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.3.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+    <dependency>
+      <groupId>com.relevantcodes</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>2.41.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.6.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugin-tools/maven-plugin-annotations -->
+    <dependency>
+      <groupId>org.apache.maven.plugin-tools</groupId>
+      <artifactId>maven-plugin-annotations</artifactId>
+      <version>3.7.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+
+
+
+
+
+  </dependencies>
+
+</project>

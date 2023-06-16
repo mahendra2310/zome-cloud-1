@@ -1,0 +1,24 @@
+**node_modules
+**log
+**package-lock.json
+.github/.DS_Store
+microservices/.DS_Store
+microservices/api-gateway/.DS_Store
+microservices/core/client/package-lock.json
+microservices/core/config/package-lock.json
+microservices/core/lib/package-lock.json
+microservices/core/schemas/package-lock.json
+microservices/core/server/package-lock.json
+microservices/core/utils/package-lock.json
+microservices/gateway.ini
+microservices/zomekit-connector.ini
+.serverless
+serverless.env.yml
+assets
+# dotenv environment variables file
+.env
+.env.test
+*.zip
+*.class
+target/classes/main/resources/archetype-resources/pom.xml
+target/classes/main/resources/META-INF/maven/archetype.xml

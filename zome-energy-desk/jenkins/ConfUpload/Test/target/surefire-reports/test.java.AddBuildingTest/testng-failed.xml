@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test.java.AddBuildingTest]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="test.java.confAutoReportTest">
+        <methods>
+          <include name="beforeEachTest"/>
+          <include name="addBuilding"/>
+          <include name="afterSuite"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="getResult"/>
+          <include name="afterEachTest"/>
+        </methods>
+      </class> <!-- test.java.confAutoReportTestrtTest>
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [test.java.confAutoReportTestrtTest->

@@ -1,0 +1,20 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "node-schedule": "^2.1.0",
+    "zome-client": "file:../core/client",
+    "zome-config": "file:../core/config",
+    "zome-schemas": "file:../core/schemas",
+    "zome-server": "file:../core/server",
+    "zome-utils": "file:../core/utils"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node start.server.js"
+  }
+}

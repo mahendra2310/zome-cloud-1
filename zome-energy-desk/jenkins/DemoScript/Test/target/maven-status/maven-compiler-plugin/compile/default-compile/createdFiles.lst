@@ -1,0 +1,6 @@
+test\java\demoScriptTest.class
+hooks\base.class
+hooks\Utilities.class
+$org\example\App.class
+$org\example\AppTest.class
+pageobjects\loginpage.class

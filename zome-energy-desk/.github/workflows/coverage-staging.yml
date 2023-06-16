@@ -1,0 +1,49 @@
+name: Running Code Coverage
+
+on:
+  push:
+     branches: [staging]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install jest
+
+    - name: Installing NPM in utils library
+      run: cd microservices/core/utils && npm install
+
+    - name: Installing NPM in core server
+      run: cd microservices/core/server && npm install
+
+    - name: Installing NPM in utils library
+      run: cd microservices/core/lib && npm install
+    
+    - name: Create folder
+      run: |
+        mkdir -p /home/runner/work/zome-energy-desk/zome-energy-desk/log && touch app.log
+
+    - name: Run the tests
+      run: npm test 
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}

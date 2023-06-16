@@ -1,0 +1,19 @@
+{
+  "//": [
+    " Author: Nilesh Maheshwari"
+  ],
+  "name": "web-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "zome-server": "file:../core/server",
+    "zome-config": "file:../core/config",
+    "zome-schemas": "file:../core/schemas",
+    "zome-client": "file:../core/client",
+    "zome-utils": "file:../core/utils"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node start.server.js"
+  }
+}

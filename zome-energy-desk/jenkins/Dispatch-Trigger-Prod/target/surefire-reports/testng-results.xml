@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-16T15:47:58 PDT" name="dispatchTest" finished-at="2023-03-16T15:49:05 PDT" duration-ms="67039">
+    <groups>
+    </groups>
+    <test started-at="2023-03-16T15:47:58 PDT" name="Command line test" finished-at="2023-03-16T15:49:05 PDT" duration-ms="67039">
+      <class name="dispatchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:dispatchTest@7920ba90]" started-at="2023-03-16T15:47:58 PDT" name="setUp" finished-at="2023-03-16T15:48:08 PDT" duration-ms="9956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addTempCheck()[pri:0, instance:dispatchTest@7920ba90]" started-at="2023-03-16T15:48:08 PDT" name="addTempCheck" finished-at="2023-03-16T15:49:05 PDT" duration-ms="57020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTempCheck -->
+      </class> <!-- dispatchTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- dispatchTest -->
+</testng-results>

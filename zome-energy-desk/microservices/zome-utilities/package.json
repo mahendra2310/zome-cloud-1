@@ -1,0 +1,17 @@
+{
+  "name": "zome-utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "log-publish.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1182.0",
+    "dotenv": "^16.0.1",
+    "node-schedule": "^2.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
