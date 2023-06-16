@@ -16,7 +16,6 @@ microservices/zomekit-connector.ini
 serverless.env.yml
 assets
 # dotenv environment variables file
-.env
 .env.test
 *.zip
 *.class
